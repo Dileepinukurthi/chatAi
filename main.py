@@ -1,5 +1,7 @@
 import os
+import json
 import openai
-openai.my_api_key="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"
+openai.my_api_key=json.loads(open("keys.json").read())['openaikey']
 messages=[{"role":"system","content":"intelligent system"}]
+
 
